@@ -12,4 +12,5 @@ router.register(r'goal_progress', GoalProgressViewSet)
 
 urlpatterns = [
     path("api/", include(router.urls)),
+    path("api/auth/firebase-login/", firebase_login, name="firebase-login"),
 ]
